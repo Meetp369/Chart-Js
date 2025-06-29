@@ -1,0 +1,235 @@
+.noLayoutOverLay {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    height: 30vh;
+    row-gap: 1vw;
+}
+
+.noLayoutDashBoardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.LayoutDashBoardContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.layoutDialogOptions {
+    display: flex;
+    column-gap: 5vw;
+}
+
+.layoutDialogItem {
+    padding: 1vw;
+}
+
+.selectLayoutBorder{
+    border: 2px solid black;
+    padding: 1vw;
+    border-radius: 8px;
+}
+
+.layoutContainer{
+    display: flex;
+    column-gap: 1vw;
+    flex-direction: row;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+    height: 100vh;
+}
+
+.layoutRow {
+    display: flex;
+    column-gap: 2vw;
+}
+
+.layoutColumn{
+    display: flex;
+    column-gap: 1vw;
+    flex-wrap: wrap;
+    width: 45vw;
+    height: 70vh;
+    row-gap: 1vw;
+}
+
+.layoutRowItemSmall{
+    width: 30vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layoutRowItemLarge {
+    width: 46vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layoutColumnItemSmall{
+    width: 22vw;
+    height: 34vh;
+}
+
+.layoutColumnItemLarge{
+    width: 45vw;
+    height: 70vh;
+}
+
+.formContainer {
+    &:global(.MuiGrid-root){
+        flex-direction: column;
+        row-gap: 2vw;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.chartStyle{
+    &:global(.MuiFormGroup-root) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 25vw;
+        align-items: center;
+        justify-content: center;
+    }  
+}
+
+.formFieldWidth {
+    width: 20vw;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vw;
+    width: 25vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.axisContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+}
+
+.pieDataField{
+    display: flex;
+    width: 20vw;
+    column-gap: .5vw;
+    align-items: center;
+}
+
+.chartContainer{
+    &:global(.MuiGrid-root){
+        display : flex;
+        width : 100vw;
+        height : 100vh;
+        flex-direction : row;
+    } 
+}
+
+.chartBox {
+    flex: 1 1 auto;
+    display : flex;
+    height : 45vh;
+    padding: 1vw;
+    flex-direction: column;
+}
+
+.chartBoxItem {
+    flex-grow: 1;
+    height: 40vh; 
+    position: relative;
+}
+
+.chartDialogItem{
+    flex-grow: 1;
+    height: 60vh;
+}
+
+.editOptionContainer{
+    display: flex;
+    height: 5vh;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.chartConfigurationPanel{
+    padding: 12px;
+    overflow-y: scroll;
+    height: 99vh;
+    &:global('MuiGrid-root'){
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        height: 100vh;
+    };
+    
+    
+}
+
+.chartConfigurationPanelItem{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.chartFlexStyle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.titleContainer{
+    display: flex;
+    column-gap: 3vw;
+}
+
+.titleTextBox{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+    width: 15vw;
+}
+
+.titleAlignBox{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 1vw;
+}
+
+.chartGrid {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.loader{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
