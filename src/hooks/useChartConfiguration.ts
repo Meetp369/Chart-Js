@@ -233,6 +233,7 @@ const useChartConfiguration = (options: ChartOption) => {
         updatedToolbox[name] = value
       } else {
         if (!checked) {
+          // eslint-disable-next-line @typescript-eslint/no-dynamic-delete
           delete updatedToolbox.feature[name]
         } else {
           if (name === 'restore') updatedToolbox.feature.restore = { show: true }
@@ -251,6 +252,7 @@ const useChartConfiguration = (options: ChartOption) => {
 
   const onUpdateSeriesField = (index: number, key: string, value: any) => {
     setChartOptions((prevOptions) => {
+      // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
       const updatedSeries = [...(prevOptions.series || [])]
       updatedSeries[index] = {
         ...updatedSeries[index],
@@ -270,6 +272,7 @@ const useChartConfiguration = (options: ChartOption) => {
 
   const onRemoveSeries = (index: number) => {
     setChartOptions((prevOptions) => {
+      // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
       const updatedSeries = [...(prevOptions.series || [])]
       updatedSeries.splice(index, 1)
       return {
@@ -283,6 +286,7 @@ const useChartConfiguration = (options: ChartOption) => {
     setChartOptions((prevOptions) => ({
       ...prevOptions,
       series: [
+        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
         ...(prevOptions.series || []),
         {
           name: '',
