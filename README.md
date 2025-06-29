@@ -2,7 +2,7 @@
 
 This project is a **React-based dynamic chart configuration panel** built using **Apache ECharts**. It allows users to customize and visualize charts like **bar** and **line** charts with real-time previews. The UI is modular and user-friendly, enabling users to adjust everything from titles and legends to axes and toolbox features.
 
-> ⚠️ Note: Despite the repository name `Chart-Js`, this project uses **Apache ECharts**, not Chart.js.
+> ⚠️ Note: This project uses **Apache ECharts**, not Chart.js.
 
 ---
 
