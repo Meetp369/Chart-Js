@@ -72,6 +72,7 @@ export const chartData = [
     }
   },
   {
+    id: shortid.generate(),
     xAxis: {
       type: 'category',
       data: [
@@ -250,6 +251,7 @@ export const chartData = [
     ]
   },
   {
+    id: shortid.generate(),
     xAxis: {
       type: 'category',
       data: [
@@ -358,9 +360,6 @@ export const chartData = [
         }
       }
     ],
-    tooltip: {
-      trigger: 'axis'
-    },
     legend: {
       data: [
         'Direct',
