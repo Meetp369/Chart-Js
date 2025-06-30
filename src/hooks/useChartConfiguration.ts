@@ -24,7 +24,7 @@ const useChartConfiguration = (options: ChartOption) => {
   const [dataField, setDataField] = useState(getDataFieldValue())
   const [radius, setRadius] = useState<number | number[]>(Number(options.series?.[0].radius?.split('%')[0]) || 50)
   const [chartOptions, setChartOptions] = useState(options)
-  const [legendEnabled, setLegendEnabled] = useState<boolean>(options?.legend?.data.length > 0 ? true : false)
+  const [legendEnabled, setLegendEnabled] = useState<boolean>((options?.legend?.data ?? []).length > 0 ? true : false)
 
   useEffect(() => {
     dispatch(setOptions(chartOptions))
